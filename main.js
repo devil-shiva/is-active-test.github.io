@@ -1,8 +1,10 @@
+let c = 0;
 window.addEventListener('blur', ()=>{
     console.log('minimised')
-    document.getElementsByClassName('head')[0].innerHTML = "minimised"
+    c = c+1;
+    document.getElementsByClassName('head')[0].innerHTML = "<h2>minimised </h2>"+ c + " times"
 })
 
-if (document.hidden) {
-    alert('minimised')
-}
+// if (document.hidden) {
+//     alert('minimised')
+// }
